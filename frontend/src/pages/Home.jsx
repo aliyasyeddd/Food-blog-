@@ -1,4 +1,6 @@
 import React from "react";
+import foodRecipe from '../assets/foodRecipe.png'
+import RecipeItems from "../components/RecipeItems";
 
 export default function Home() {
   return (
@@ -16,7 +18,7 @@ export default function Home() {
           <button>Share your recipe</button>
         </div>
         <div className="right">
-          <img width="320px" height="300px"></img>
+          <img width="320px" height="300px" src={foodRecipe}></img>
         </div>
       </section>
       <div className="bg">
@@ -28,7 +30,6 @@ export default function Home() {
           ></path>
         </svg>
       </div>
-      <Modal></Modal>
       <div className="recipe">
         <RecipeItems />
       </div>
